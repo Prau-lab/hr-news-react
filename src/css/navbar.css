@@ -1,0 +1,72 @@
+.logo img {
+    height: 8rem;
+    width: 8rem;
+}
+
+/* Menu Bar Section Start */
+
+.menu-bar {
+    background: #dd2028;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item a {
+    color: white;
+    width: 140px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover{
+    color: white;
+}
+
+.nav-item a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    bottom: 0%;
+    transition: 0.3s;
+}
+
+.nav-item a:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.submit:hover{
+    color: #6c757d;
+}
+
+.search-btn{
+    height: 50px;
+    margin-top: -1px;
+}
+
+/* Menu Bar Section End */
+
+
+/* Banner Section Start */
+
+.second-banner {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/* Banner Section End */

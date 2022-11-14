@@ -1,0 +1,77 @@
+.d-flex{
+    margin-top: 0.7654rem;
+}
+
+.fa-brands {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.23rem;
+}
+
+.f {
+    margin-top: 0;
+    background-color: #4267B2;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.i {
+    background: #E1306C;
+    transition: 0.3s ease;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.l {
+    background-color: #0072b1;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.y {
+    background-color: #FF0000;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.t {
+    background-color: #000000;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.f:hover,
+.i:hover,
+.i:hover,
+.l:hover,
+.y:hover,
+.t:hover {
+    background-color: #545151;
+}
