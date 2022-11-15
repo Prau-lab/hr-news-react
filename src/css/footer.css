@@ -1,0 +1,117 @@
+/* Footer Section Start  */
+
+.footer-main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #DD2028;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media-footer {
+    width: 90%;
+    margin: 0.7654rem auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 9px;
+    background-color: #DD2028;
+}
+
+.s-media {
+    height: 35px;
+    width: 40px;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.fa-brands {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.23rem;
+}
+
+.f {
+    margin-top: 0;
+    background-color: #4267B2;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.i {
+    background: #E1306C;
+    transition: 0.3s ease;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.l {
+    background-color: #0072b1;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.y {
+    background-color: #FF0000;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.t {
+    background-color: #000000;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.f:hover,
+.i:hover,
+.i:hover,
+.l:hover,
+.y:hover,
+.t:hover {
+    background-color: #545151;
+}
+
+
+.footer-social-icons,
+.footer-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.footer-menu li a {
+    font-size: 0.8em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+.footer-menu li a:hover {
+    opacity: 1;
+}
+
+/* Footer Section End  */

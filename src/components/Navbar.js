@@ -1,5 +1,5 @@
 import React from 'react'
-import navbar from "../css/navbar.css"
+import "../css/navbar.css"
 
 
 // import {
@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">HR News Nepal</a>
+                                <a className="nav-link" href="#">HR News</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">HR Events</a>
@@ -58,12 +58,6 @@ const Navbar = () => {
                 </div>
             </nav>
             {/* Naviagtion section End */}
-
-            {/* Banner Section Start */}
-            <div className="second-banner my-4 d-flex justify-content-center">
-                <img src="../Images/1230x1001.jpg" alt="image not found" />
-            </div>
-            {/* Banner Section End */}
         </>
     )
 }

@@ -1,0 +1,25 @@
+.slider{
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.calender{
+    margin-right: 8px;
+    color: #dd2028;
+}
+
+.sliderInfo{
+    color: #083243;
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+

@@ -17,6 +17,7 @@
 
 .nav-item {
     width: 100%;
+    text-align: center;
 }
 
 .nav-item a {
@@ -38,7 +39,7 @@
     content: "";
     position: absolute;
     background-color: white;
-    height: 1px;
+    height: 2px;
     width: 0%;
     left: 50%;
     bottom: 0%;
@@ -62,11 +63,4 @@
 /* Menu Bar Section End */
 
 
-/* Banner Section Start */
 
-.second-banner {
-    width: 90%;
-    margin: 1rem auto;
-}
-
-/* Banner Section End */
