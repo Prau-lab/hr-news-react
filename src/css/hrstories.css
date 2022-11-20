@@ -1,0 +1,203 @@
+/* Top Stories Section Start */
+
+.topstories-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topstories-image>img {
+    height: 75%;
+    width: 70%;
+}
+
+.topstories-heading {
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.topstories-para {
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.topstoreis-list {
+    position: relative;
+    width: 60%;
+}
+
+.topstories-list-heading::before {
+    content: "";
+    position: absolute;
+    background-color: #DD2028;
+    height: 1px;
+    width: 15%;
+    left: 0;
+    top: 0;
+}
+
+.topstories-list-heading {
+    margin-top: 0.5rem;
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.topstories-list-heading {
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.topstories-listing-news {
+    margin-top: 2rem;
+}
+
+.topstories-listing-news a{
+    text-decoration: none;
+}
+
+.topstories-listing-news>a>p {
+    color: black;
+    margin-top: 1.5rem;
+    width: 200%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.ads-banner{
+    margin-top: 3rem;
+    width: 100%;
+    height: 30%;
+    border: 1px solid black;
+}
+
+/* Top Stories Section End */
+
+/* HR Stories Section Start */
+
+.hr-stories-heading {
+    margin: 0.7654rem 0;
+}
+
+.hr-stories-heading h1 {
+    margin: 2rem 0 1rem 0;
+    color: #DD2028;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hr-stories-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-column-gap: 47px;
+    grid-row-gap: 34px;
+}
+
+.hrstories-image>img {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.hrstories-heading {
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.hrstories-para {
+    color: black;
+    margin-top: 1.5rem;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.hr-stories-info {
+    margin-top: 0.5rem;
+}
+
+.hrstories-dates {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #DD2028;
+}
+
+.date {
+    margin-left: 2rem;
+}
+
+/* HR Stories Section End */
+
+/* Recent Post Section Start */
+
+.recentpost-main {
+    margin: 4rem auto 3rem auto;
+}
+
+.recentpost-main-line {
+    border: 1.5px solid black;
+    width: 50%;
+}
+
+.recentpost-heading {
+    padding: 0.1rem 3rem 0.5rem 3rem;
+}
+
+.recentpost-heading>h1 {
+    margin: 2rem 0 1rem 0;
+    color: #DD2028;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.recentpost-image>img {
+    height: 120px;
+    width: 180px;
+}
+
+.recent-post-news {
+    display: flex;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.recent-post{
+    margin-left: 3rem;
+}
+
+.recent-post-heading{
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.recent-post-para{
+    width: 100%;
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Recent Post Section End */

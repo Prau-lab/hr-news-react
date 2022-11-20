@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../css/carousel.css"
 import Slider from './Slider';
+import FirstBanner from "../components/FirstBanner"
 
 const Carousel = () => {
     const [newsInfo, setNewsInfo] = useState([]);
@@ -50,11 +51,9 @@ const Carousel = () => {
         <>
 
             {/* Banner Section Start */}
-            <div className="second-banner my-4 d-flex justify-content-center">
-                <img src="../Images/1230x1001.jpg" alt="image not found" />
-            </div>
+            <FirstBanner />
             {/* Banner Section End */}
-            
+
             {/* Slider Section Start */}
             <Slider newsInfo={newsInfo} />
             {/* Slider Section End */}
@@ -73,8 +72,9 @@ const Carousel = () => {
                                 <div className="news-section" key={element.urlToImage}>
                                     <img src={!element.urlToImage ? "https://cdn.vox-cdn.com/thumbor/Xx-5LI83bB-z6NSmy1A0gKMhf9s=/0x0:1020x676/1200x628/filters:focal(510x338:511x339)/cdn.vox-cdn.com/uploads/chorus_asset/file/24196839/facebookthumbsdong.jpg" : element.urlToImage} alt="image not found" />
                                     <div className="heading-date">
-                                        <h4><a href="#">{element.title}</a></h4>
+                                        <h4><a href="#">{element.title ? element.title.slice(0, 50) : ""}...</a></h4>
                                         <p><i className="far fa-clock">&nbsp;&nbsp;</i>{element.publishedAt}</p>
+                                        <div ><a href={element.url} className='news-readmore'>Read More</a></div>
                                     </div>
                                 </div>
                             )
