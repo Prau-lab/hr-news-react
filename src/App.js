@@ -11,6 +11,7 @@ import Hrstories from './components/Hrstories'
 import Career from './components/Career'
 import Newsletter from './components/Newsletter'
 import Books from './components/Books'
+import Appointed from './components/Appointed'
 import {
   BrowserRouter as Router,
   Routes,
@@ -31,7 +32,7 @@ const App = () => {
             <Route exact path='/' element={<Carousel />} />
             <Route exact path='/Hrevents' element={<Hrevents />} />
             <Route exact path='/Hrstories' element={<Hrstories />} />
-            {/* <Route path='/Appointed' element= {<Appointed />}></Route> */}
+            <Route path='/Appointed' element= {<Appointed />}></Route>
             <Route exact path='/Newsletter' element={<Newsletter />} />
             <Route exact path='/Career' element={<Career />} />
             <Route exact path='/Books' element={<Books />} />

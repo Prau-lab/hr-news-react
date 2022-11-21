@@ -1,0 +1,56 @@
+.news-section-header h1 {
+    margin: 2rem 0 1rem 0;
+    color: #DD2028;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* Appointed Section Start */
+
+.appointed-main{
+    margin: 0.7654rem auto;
+}
+
+.a-main {
+    display: flex;
+    width: 50%;
+}
+.second-appointed {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.a-main-second{
+    display: flex;
+    width: 50%;
+}
+
+.appointed-image-one{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+}
+
+.appointed-topic-description{
+    width: 80%;
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.appointed-heading{
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #DD2028;
+}
+
+.appointed-description{
+    width: 100%;
+    text-align: justify;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Appointed Section End */
