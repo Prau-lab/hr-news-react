@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../css/hrevents.css"
-import Socialsite from './Socialsite'
-import Navbar from './Navbar'
-import FirstBanner from './FirstBanner'
-import Footer from './Footer'
-
-
-
+import { Link } from "react-router-dom";
 
 const Hrevents = () => {
     const [newsInfo, setNewsInfo] = useState([]);
@@ -45,9 +39,6 @@ const Hrevents = () => {
 
     return (
         <>
-            <Socialsite />
-            <Navbar />
-            <FirstBanner />
             {/* Top HR Events in 2022 Start */}
             <div className="top-hr-events">
                 <div className="backgroundimg">
@@ -76,7 +67,7 @@ const Hrevents = () => {
                 {
                     newsInfo.map((element) => {
                         return (
-                            <div className="month-realated-events">
+                            <div className="month-realated-events" key={element.urlToImage}>
                                 <div className="month-realated-event-heading">
                                     <h1>Hello Welcome To Our Event</h1>
                                 </div>
@@ -125,7 +116,6 @@ const Hrevents = () => {
                 </div>
             </div>
             {/* HR Event List 2023 Section End */}
-            <Footer />
         </>
     )
 }

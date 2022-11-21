@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../css/carousel.css"
 import Slider from './Slider';
-import FirstBanner from "../components/FirstBanner"
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
     const [newsInfo, setNewsInfo] = useState([]);
@@ -49,11 +49,6 @@ const Carousel = () => {
     }
     return (
         <>
-
-            {/* Banner Section Start */}
-            <FirstBanner />
-            {/* Banner Section End */}
-
             {/* Slider Section Start */}
             <Slider newsInfo={newsInfo} />
             {/* Slider Section End */}
@@ -72,7 +67,7 @@ const Carousel = () => {
                                 <div className="news-section" key={element.urlToImage}>
                                     <img src={!element.urlToImage ? "https://cdn.vox-cdn.com/thumbor/Xx-5LI83bB-z6NSmy1A0gKMhf9s=/0x0:1020x676/1200x628/filters:focal(510x338:511x339)/cdn.vox-cdn.com/uploads/chorus_asset/file/24196839/facebookthumbsdong.jpg" : element.urlToImage} alt="image not found" />
                                     <div className="heading-date">
-                                        <h4><a href="#">{element.title ? element.title.slice(0, 50) : ""}...</a></h4>
+                                        <h4><Link to="/Subpage">{element.title ? element.title.slice(0, 50) : ""}...</Link></h4>
                                         <p><i className="far fa-clock">&nbsp;&nbsp;</i>{element.publishedAt}</p>
                                         <div ><a href={element.url} className='news-readmore'>Read More</a></div>
                                     </div>
@@ -116,9 +111,9 @@ const Carousel = () => {
                     newsInfo && newsInfo.slice(0, 6).map((element) => {
                         return (
                             <div className="hottest-news-div" key={element.urlToImage}>
-                                <a href="#"><img src={!element.urlToImage ? "https://cdn.vox-cdn.com/thumbor/Xx-5LI83bB-z6NSmy1A0gKMhf9s=/0x0:1020x676/1200x628/filters:focal(510x338:511x339)/cdn.vox-cdn.com/uploads/chorus_asset/file/24196839/facebookthumbsdong.jpg" : element.urlToImage} alt="" className="hottest-news-image" /></a>
+                                <Link to="#"><img src={!element.urlToImage ? "https://cdn.vox-cdn.com/thumbor/Xx-5LI83bB-z6NSmy1A0gKMhf9s=/0x0:1020x676/1200x628/filters:focal(510x338:511x339)/cdn.vox-cdn.com/uploads/chorus_asset/file/24196839/facebookthumbsdong.jpg" : element.urlToImage} alt="" className="hottest-news-image" /></Link>
                                 <div className="hottest-news-topic">
-                                    <h4 className="hottest-news-heading"><a href="">{element.title}</a>
+                                    <h4 className="hottest-news-heading"><Link to="/Subpage">{element.title}</Link>
                                     </h4>
                                     <div className="hottest-news-subdiv">
                                         <img src="../Images/reporter.jpg" alt="image not found" className="hottest-news-reporter" /><span
@@ -152,7 +147,7 @@ const Carousel = () => {
                 {
                     newsInfo && newsInfo.slice(0, 3).map((element) => {
                         return (
-                            <div className="featured-new">
+                            <div className="featured-new" key={element.urlToImage}>
                                 <div className="featured-news-bgimg">
                                     <img src={!element.urlToImage ? "https://cdn.vox-cdn.com/thumbor/Xx-5LI83bB-z6NSmy1A0gKMhf9s=/0x0:1020x676/1200x628/filters:focal(510x338:511x339)/cdn.vox-cdn.com/uploads/chorus_asset/file/24196839/facebookthumbsdong.jpg" : element.urlToImage} alt="" />
                                 </div>
@@ -160,9 +155,9 @@ const Carousel = () => {
                                     <img src={!element.urlToImage ? "https://cdn.vox-cdn.com/thumbor/Xx-5LI83bB-z6NSmy1A0gKMhf9s=/0x0:1020x676/1200x628/filters:focal(510x338:511x339)/cdn.vox-cdn.com/uploads/chorus_asset/file/24196839/facebookthumbsdong.jpg" : element.urlToImage} alt="" />
                                 </div>
                                 <div className="featured-news-information">
-                                    <a href="../html/sub-page.html"><h4 className="featured-person">{!element.author ? "unknown" : element.author}</h4></a>
-                                    <a href="../html/sub-page.html"><h2 className="featured-news-info">Featured News related with Ram Krishna Dhakal</h2></a>
-                                    <a href="../html/sub-page.html"><p className="featured-news-designation">Front-end Engineer, ABC Company</p></a>
+                                    <Link to="/Subpage"><h4 className="featured-person">{!element.author ? "unknown" : element.author}</h4></Link>
+                                    <Link to="/Subpage"><h2 className="featured-news-info">Featured News related with Ram Krishna Dhakal</h2></Link>
+                                    <Link to="/Subpage"><p className="featured-news-designation">Front-end Engineer, ABC Company</p></Link>
                                 </div>
                             </div>
                         )

@@ -88,6 +88,7 @@
 /* News Section End */
 
 /* Button Section Start */
+
 .button{
     margin: 3rem 0;
     padding: 10px 7px;
@@ -300,7 +301,7 @@
 .featured-news-info {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
-    color: black;
+    color: #083243;
     font-size: 1.5rem;
     cursor: pointer;
     margin-top: 2rem;

@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../css/hrstories.css"
-import Socialsite from './Socialsite'
-import Navbar from './Navbar'
-import FirstBanner from './FirstBanner'
-import Footer from './Footer'
+import { Link } from "react-router-dom";
 
 const Hrstories = () => {
     const [newsInfo, setNewsInfo] = useState([]);
@@ -41,10 +38,6 @@ const Hrstories = () => {
 
     return (
         <>
-            <Socialsite />
-            <Navbar />
-            <FirstBanner />
-
             {/* Top Stories Section Start */}
             <div className="topstories-main">
                 <div className="topstories-section">
@@ -62,9 +55,9 @@ const Hrstories = () => {
                         <div className="topstories-listing-news">{
                             newsInfo && newsInfo.slice(0, 5).map((element) => {
                                 return (
-                                    <a href="" key={element.urlToImage}>
+                                    <Link to="/Subpage" key={element.urlToImage}>
                                         <p>1. {element.title ? element.title.slice(0, 60) : ""}...</p>
-                                    </a>
+                                    </Link>
                                 )
                             })
                         }
@@ -88,12 +81,12 @@ const Hrstories = () => {
                 {
                     newsInfo.map((element) => {
                         return (
-                            <div className="hr-stories">
+                            <div className="hr-stories" key={element.urlToImage}>
                                 <div className="hrstories-image">
                                     <img src={!element.urlToImage ? "https://www.thestreet.com/.image/t_share/MTg5NjkxMTEwNTkzOTMxMDE3/carvana.jpg" : element.urlToImage} alt="" />
                                 </div>
                                 <div className="hrstories-content">
-                                    <h3 className="hrstories-heading">{element.title}</h3>
+                                    <Link to="/Subpage"><h3 className="hrstories-heading">{element.title}</h3></Link> 
                                     <p className="hr-stories-info"><span className="hrstories-dates">{!element.author ? "Alex Kritos" : element.author}</span> <span
                                         className="hrstories-dates date">{formatDate(element.publishedAt)}</span> </p>
                                     <p className="hrstories-para">{element.description ? element.description.slice(0, 500) : ""}...</p>
@@ -106,23 +99,23 @@ const Hrstories = () => {
             {/* HR Stories Section End */}
 
             {/* Recent Post Section Start */}
-            <div class="recentpost-main">
-                <div class="recentpost-main-line">
-                    <div class="recentpost-heading">
-                        <h1 class="">Recent Post</h1>
+            <div className="recentpost-main">
+                <div className="recentpost-main-line">
+                    <div className="recentpost-heading">
+                        <h1 className="">Recent Post</h1>
                         <hr />
                         <br />
                     </div>
                     {
                             newsInfo && newsInfo.slice(0,5).map((element) => {
                                 return(
-                                    <div class="recent-post-news">
-                                    <div class="recentpost-image">
+                                    <div className="recent-post-news" key={element.urlToImage}>
+                                    <div className="recentpost-image">
                                         <img src={!element.urlToImage ? "https://www.thestreet.com/.image/t_share/MTg5NjkxMTEwNTkzOTMxMDE3/carvana.jpg" : element.urlToImage} alt="" />
                                     </div>
-                                    <div class="recent-post">
-                                        <h3 class="recent-post-heading">{element.title}</h3>
-                                        <p class="recent-post-para">{element.description ? element.description.slice(0, 600) : ""}...</p>
+                                    <div className="recent-post">
+                                        <h3 className="recent-post-heading">{element.title}</h3>
+                                        <p className="recent-post-para">{element.description ? element.description.slice(0, 600) : ""}...</p>
                                     </div>
                                 </div>
                                 )
@@ -132,8 +125,6 @@ const Hrstories = () => {
                 </div>
             </div>
             {/* Recent Post Section End */}
-
-            <Footer />
         </>
     )
 }

@@ -8,27 +8,38 @@ import Carousel from './components/Carousel'
 import Footer from './components/Footer'
 import Subpage from './components/Subpage'
 import Hrstories from './components/Hrstories'
+import Career from './components/Career'
+import Newsletter from './components/Newsletter'
+import Books from './components/Books'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import FirstBanner from './components/FirstBanner'
 
 const App = () => {
-  const [progress, setProgress] = useState(0)
-
   return (
     <>
-      <div className='main-container'>
-      <LoadingBar
-        color='#f11946'
-        progress={progress}
-        onLoaderFinished={() => setProgress(0)}
-      />
-        {/* <Socialsite />
-        <Navbar />
-        <Carousel />
-        <Footer />
-        <Subpage />
-        <Hrevents /> */}
-
-        <Hrstories />
-      </div>
+      <Router>
+        <div className='main-container'>
+          <Socialsite />
+          <Navbar />
+          <FirstBanner />
+          <Routes>
+            <Route exact path='/' element={<Carousel />} />
+            <Route exact path='/Hrevents' element={<Hrevents />} />
+            <Route exact path='/Hrstories' element={<Hrstories />} />
+            {/* <Route path='/Appointed' element= {<Appointed />}></Route> */}
+            <Route exact path='/Newsletter' element={<Newsletter />} />
+            <Route exact path='/Career' element={<Career />} />
+            <Route exact path='/Books' element={<Books />} />
+            <Route exact path='/Subpage' element={<Subpage />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     </>
   )
 }

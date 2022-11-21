@@ -111,12 +111,17 @@
     margin-bottom: 1rem;
 }
 
+.hrstories-content a{
+    text-decoration: none;
+}
+
 .hrstories-heading {
     width: 100%;
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     cursor: pointer;
     font-size: 1.5rem;
+    color: black;
 }
 
 .hrstories-para {

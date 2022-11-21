@@ -1,0 +1,72 @@
+
+
+/* Main Container Start */
+
+.book-heading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    color: #DD2028;
+}
+
+.book-heading > div > h1, .book-heading > div > h3{
+    font-weight: 800;
+}
+
+.form-book{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 2rem 0;
+}
+
+.form{
+    width: 30%;
+    height: 100%;
+}
+
+.text, .email, .number{
+    width: 80%;
+    height: 50px;
+}
+
+.check{
+    margin-top: 1rem;
+}
+
+.form > p {
+    margin-top: 0.3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.book-content{
+    width: 70%;
+}
+
+.book-content > p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.books{
+    height: 400px;
+    width: 300px;
+}
+
+.download{
+    background-color: #DD2028;
+    border: #DD2028;
+    color: white;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.download:hover{
+    background-color: white;
+    border: 1px solid #DD2028;
+    color: black;
+}
+/* Main Container End */

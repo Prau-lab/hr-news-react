@@ -13,6 +13,11 @@
     color: #dd2028;
 }
 
+.slider-title a{
+    text-decoration: none;
+    color: #083243;
+}
+
 .sliderInfo{
     color: #083243;
     width: 80%;
@@ -21,5 +26,10 @@
     bottom: 0;
     font-family: 'Playfair Display', serif;
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sliderInfo a{
+    color: #083243;
+    text-decoration: none;
 }
 

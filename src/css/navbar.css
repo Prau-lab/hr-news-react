@@ -3,6 +3,10 @@
     width: 8rem;
 }
 
+.logo-banner-image > img {
+    width: 100%;
+}
+
 /* Menu Bar Section Start */
 
 .menu-bar {

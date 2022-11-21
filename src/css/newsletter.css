@@ -1,0 +1,107 @@
+/* Searching Section Start */
+
+.searching-section {
+    margin-top: 3rem;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-keyword,
+.search-option,
+.order {
+    border: 1px solid grey;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.search-keyword {
+    width: 50%;
+}
+
+.search-option,
+.order {
+    width: 15%;
+}
+
+.apply-filter {
+    width: 100%;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    background-color: #DD2028;
+    color: white;
+    border: none;
+    transition: all 0.3s;
+}
+
+.apply-filter:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #DD2028;
+}
+
+.book-pdf-section {
+    margin: 2.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.img-book-pdf{
+    display: flex;
+    justify-content: center;
+}
+
+.img-book-pdf>img {
+    height: 400px;
+    width: 100%;
+}
+
+.title-book-pdf a{
+    text-decoration: none;
+}
+
+.title-book-pdf > a > h4{
+    font-size: 1rem; 
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: black;
+}
+
+.title-book-pdf > a > h3{
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 18.72px;
+}
+
+.next-button{
+    display: flex;
+    justify-content: center;
+}
+
+.next-button > span{
+    margin: 1rem 0 1rem 0;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.next-button > span:hover{
+    background-color: rgb(223, 223, 223);
+    border: rgb(223, 223, 223);
+}
+
+/* Searching Section End */
